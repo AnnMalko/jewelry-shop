@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+.welcome {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.second {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.last {
+  margin-bottom: 5%;
+}
+
+.about {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.top {
+  padding-top: 10%;
+}
+
+span {
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.product-info {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #eeecec;
+  height: 800px;
+  margin-top: 200px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-transition {
+  width: 800px;
+  height: auto;
+}
+
+.image-transition:nth-child(n) {
+  margin-right: 20px;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+
+}
+
+.back {
+  background-color: #eeecec;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  border: solid rgb(191, 191, 191);
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.change {
+  background-color: #eeecec;
+  color: black;
+  padding: 10px;
+  border: solid rgb(191, 191, 191);
+  border-radius: 4px;
+
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.change:hover {
+  transform: scale(1.1);
+}
+
+h3,
+h4 {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin: auto;
+  padding: 2px;
+}
+
+.description {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin: auto;
+  padding: 2px;
+}
+
+button {
+  margin: 10px;
+}
+
+nav {
+  background: #eeecec;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+
+}
+
+.hover:hover {
+  transform: scale(1.25);
+}
+
+.body-form {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.container-form {
+  width: 600px;
+  margin: 10%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+label {
+  margin-bottom: 8px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.contact-us {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-us-label {
+  margin: 5%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.send {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.send:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 480px) {
+  .body-container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .image-wrapper img {
+    width: 100%;
   }
 }
