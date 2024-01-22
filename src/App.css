@@ -4,31 +4,16 @@
   flex-wrap: wrap;
 }
 
-.first {
+.first,
+.second,
+.about,
+.last {
+  padding: 2%;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-}
-
-.second {
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
 .last {
   margin-bottom: 5%;
-}
-
-.about {
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
 .top {
@@ -57,6 +42,8 @@ span {
 
 body {
   background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -65,6 +52,9 @@ body {
   background-color: #eeecec;
   height: 800px;
   margin-top: 200px;
+  height: 100vh;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .btn {
@@ -110,7 +100,7 @@ body {
 .change {
   background-color: #eeecec;
   color: black;
-  padding: 10px;
+  padding: 0.5em 0.5em;
   border: solid rgb(191, 191, 191);
   border-radius: 4px;
 
@@ -121,12 +111,14 @@ body {
   transform: scale(1.1);
 }
 
-h3,
-h4 {
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
-  margin: auto;
-  padding: 2px;
+*/ h3,
+h4,
+.description,
+label {
+  font-size: 1.2em;
+  font-family: 'Encode Sans Semi Expanded', sans-serif
 }
+
 
 .description {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
@@ -218,14 +210,16 @@ textarea {
 }
 
 .send {
-  padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
+  padding: 8px;
+  font-size: 1em;
 }
+
 
 .send:hover {
   background-color: #0056b3;
@@ -239,6 +233,18 @@ textarea {
 
 @media only screen and (max-width: 600px) {
   .image-wrapper img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link {
+    margin: 0.5em 0;
+  }
+
+
 }
