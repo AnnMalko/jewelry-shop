@@ -428,20 +428,5 @@ export const data = [
         searchTerm: "necklace",
         price: 200.99,
         image: [necklaceTen],
-    },
-    {
-        id: 49,
-        name: "RadiantLoom",
-        searchTerm: "earrings",
-        price: 199.99,
-        image: [earringsTen],
-    },
-
-    {
-        id: 50,
-        name: "Tranquiluxe",
-        searchTerm: "ring",
-        price: 200.99,
-        image: [ringTen],
-    },
+    }
 ];
