@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <nav>
+      <Link to="/" className="link"></Link>
         <Link to="/home" className="link">
           Welcome
         </Link>
