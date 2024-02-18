@@ -1,6 +1,17 @@
+import React, { useEffect, useState } from "react";
+import LoaderPage from "./Loader/LoaderPage";
+
 function About() {
+  const [stateLoader, setStateLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setStateLoader(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
+      {stateLoader && <LoaderPage />}
       <div className="welcome">
         <p className="about top">
           <span>Welcome to Shop</span>, a haven for those who appreciate the

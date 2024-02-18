@@ -1,6 +1,17 @@
+import { useEffect, useState } from "react";
+import LoaderPage from "./Loader/LoaderPage";
+
 function Buttons({ filteredClothes }) {
+    const [stateLoader, setStateLoader] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setStateLoader(false), 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className="cont">
+            {stateLoader && <LoaderPage />}
             <button className="change" onClick={() => filteredClothes("ring")}>
                 Rings
             </button>

@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import { item } from "./ImageSlider";
+import LoaderPage from "./Loader/LoaderPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPause,
@@ -25,6 +26,13 @@ function App() {
     setIsPaused((prevPaused) => !prevPaused);
   };
 
+  const [stateLoader, setStateLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setStateLoader(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     let interval;
     if (!isPaused) {
@@ -38,6 +46,7 @@ function App() {
 
   return (
     <div>
+      {stateLoader && <LoaderPage />}
       <div className="welcome">
         <p className="first">
           Welcome to Shop, where elegance meets simplicity in every piece.
