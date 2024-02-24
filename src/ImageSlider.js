@@ -1,44 +1,26 @@
-import item1 from "./images/bracelet1.png";
-import item2 from "./images/ring1.png";
-import item3 from "./images/pendant1.png";
-import item4 from "./images/ring5.png";
-import item5 from "./images/earrings10.png";
-import item6 from "./images/bracelet7.png";
-import item7 from "./images/ring3.png";
-import item8 from "./images/pendant3.png";
-import item9 from "./images/ring9.png";
-import item10 from "./images/earrings2.png";
+import bracelet1 from "./images/bracelet1.png";
+import ring1 from "./images/ring1.png";
+import pendant1 from "./images/pendant1.png";
+import ring5 from "./images/ring5.png";
+import earrings10 from "./images/earrings10.png";
+import bracelet7 from "./images/bracelet7.png";
+import ring3 from "./images/ring3.png";
+import pendant3 from "./images/pendant3.png";
+import ring9 from "./images/ring9.png";
+import earrings2 from "./images/earrings2.png";
+
 
 export const item = [
-    {
-        image: [item1],
-    },
-    {
-        image: [item2],
-    },
-    {
-        image: [item3],
-    },
-    {
-        image: [item4],
-    },
-    {
-        image: [item5],
-    },
+    { image: bracelet1 },
+    { image: ring1 },
+    { image: pendant1 },
+    { image: ring5 },
+    { image: earrings10 },
+    { image: bracelet7 },
+    { image: ring3 },
+    { image: pendant3 },
+    { image: ring9 },
+    { image: earrings2 }
+  ];
+  
 
-    {
-        image: [item6],
-    },
-    {
-        image: [item7],
-    },
-    {
-        image: [item8],
-    },
-    {
-        image: [item9],
-    },
-    {
-        image: [item10],
-    },
-];

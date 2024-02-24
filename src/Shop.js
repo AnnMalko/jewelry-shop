@@ -13,12 +13,19 @@ function Home() {
         setItems(newItems);
     };
 
+    const allItems = (show) => {
+        const allItems = data.filter(
+            (element) => element.show === show
+        );
+        setItems(allItems);
+    };
+
     return (
         <div>
             <div className="cont">
                 <p className="back">Free Standard Shipping</p>
             </div>
-            <Buttons filteredClothes={chosenItems} />
+            <Buttons filteredItems={chosenItems} allItems={allItems} />
             <Items itemsForSale={items} />
         </div>
     );

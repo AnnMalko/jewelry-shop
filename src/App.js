@@ -1,23 +1,18 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
-import About from "./about";
+import About from "./About";
 import Shop from "./Shop";
 import Contact from "./ContactUs";
-import LoaderPage from "./Loader/LoaderPage";
+// import LoaderPage from "./Loader/LoaderPage";
+
 
 function App() {
-  const [stateLoader, setStateLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setStateLoader(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div>
-      {stateLoader && <LoaderPage />}
+      {/* {stateLoader && <LoaderPage />} */}
 
       <Router>
         <nav>

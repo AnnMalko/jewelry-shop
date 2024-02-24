@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import LoaderPage from "./Loader/LoaderPage";
+import React, { useState } from "react";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -16,15 +15,8 @@ const ContactUs = () => {
     e.preventDefault();
   };
 
-  const [stateLoader, setStateLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setStateLoader(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <div>
-      {stateLoader && <LoaderPage />}
       <div className="contact-us-form">
         <p className="contact-us-label">
           Have questions or need assistance?

@@ -1,18 +1,11 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { item } from "./ImageSlider";
-import LoaderPage from "./Loader/LoaderPage";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPause,
-  faPlay,
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import SliderButton from "./SliderButton";
 
 function App() {
   const [items, setItems] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [, setIsPaused] = useState(false);
 
   const nextItems = () => {
     setItems((prevItems) => (prevItems + 1) % item.length);
@@ -26,27 +19,8 @@ function App() {
     setIsPaused((prevPaused) => !prevPaused);
   };
 
-  const [stateLoader, setStateLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setStateLoader(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    let interval;
-    if (!isPaused) {
-      interval = setInterval(() => {
-        nextItems();
-      }, 2000);
-    }
-
-    return () => clearInterval(interval);
-  }, [isPaused]);
-
   return (
     <div>
-      {stateLoader && <LoaderPage />}
       <div className="welcome">
         <p className="first">
           Welcome to Shop, where elegance meets simplicity in every piece.
@@ -65,23 +39,13 @@ function App() {
           />
         </div>
       </div>
-
-      <div className="btn">
-        <button onClick={previousItems}>
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        <button onClick={togglePause}>
-          {isPaused ? (
-            <FontAwesomeIcon icon={faPlay} />
-          ) : (
-            <FontAwesomeIcon icon={faPause} />
-          )}
-        </button>
-        <button onClick={nextItems}>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
+      <div>
+        <SliderButton
+          prevItems={previousItems}
+          nextItems={nextItems}
+          togglePause={togglePause}
+        />
       </div>
-
       <div className="welcome">
         <p className="second">
           At our Shop, we believe in the power of simplicity. Our jewelry
