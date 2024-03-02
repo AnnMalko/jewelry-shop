@@ -1,18 +1,24 @@
-import "./App.css";
-// import { useEffect, useState } from "react";
+import "./css/App.css";
+import  "./css/ContactUs.css";
+import "./css/SliderButton.css";
+import "./css/SliderButton.css";
+import "./css/Buttons.css";
+import "./css/Items.css";
+import "./css/Shop.css";
+import "./css/About.css";
+import "./css/Welcome.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Shop from "./Shop";
 import Contact from "./ContactUs";
-// import LoaderPage from "./Loader/LoaderPage";
+
 
 
 function App() {
 
   return (
     <div>
-      {/* {stateLoader && <LoaderPage />} */}
 
       <Router>
         <nav>

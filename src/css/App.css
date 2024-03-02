@@ -1,0 +1,78 @@
+span {
+  font-weight: bold;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #eeecec;
+  height: 800px;
+  margin-top: 200px;
+  height: 100vh;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+h3,
+h4,
+label {
+  font-size: 1.2em;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+button {
+  margin: 10px;
+}
+
+nav {
+  background: #eeecec;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 40vh;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+  .link {
+    margin: 0.1em 0.1em;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  h3 {
+    padding: 10%;
+    font-size: 1em;
+    margin-top: 35%;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

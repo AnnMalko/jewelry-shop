@@ -1,0 +1,27 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.last {
+    margin-bottom: 5%;
+}
+
+.top {
+    padding-top: 10%;
+}
+
+.about,
+.last {
+    padding: 2%;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .last,
+    .about {
+        font-size: 10px;
+    }
+}

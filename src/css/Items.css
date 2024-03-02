@@ -1,0 +1,40 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.product-info {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+}
+
+.description {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    margin: auto;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+.hover:hover {
+    transform: scale(1.25);
+}
+
+@media only screen and (max-width: 600px) {
+    .product-card {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
+
+    .product-info {
+        font-size: 9px;
+    }
+}

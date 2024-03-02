@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import { useState } from "react";
 import { item } from "./ImageSlider";
 import SliderButton from "./SliderButton";

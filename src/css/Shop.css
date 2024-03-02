@@ -1,0 +1,31 @@
+.cont {
+    display: flex;
+    justify-content: center;
+
+}
+
+.back {
+    background-color: #eeecec;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    border: solid rgb(191, 191, 191);
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+  }   
+
+.back {
+    background-color: #eeecec;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    border: solid rgb(191, 191, 191);
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .back {
+        font-size: 8px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
