@@ -1,0 +1,194 @@
+span {
+    font-weight: bold;
+}
+
+body {
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeecec;
+    box-sizing: border-box;
+    padding: 4% 3%;
+    margin: 6% auto 4%;
+    max-width: 1200px;
+    overflow: hidden;
+    gap: 30px;
+}
+
+h3,
+h4,
+label {
+    font-size: 1.2em;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+button {
+    margin: 10px;
+}
+
+nav {
+    background: #eeecec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.link {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        margin: 5% auto 4%;
+        padding: 4% 3%;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 4% auto;
+        padding: 3% 3%;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .link {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 3% auto;
+        padding: 3% 2%;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    .link {
+        padding: 6px 12px;
+        font-size: 11px;
+        margin: 2px;
+    }
+
+    h3 {
+        font-size: 1em;
+        padding: 4%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+/* span {
+  font-weight: bold;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #eeecec;
+  height: 800px;
+  margin-top: 200px;
+  height: 100vh;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+h3,
+h4,
+label {
+  font-size: 1.2em;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+button {
+  margin: 10px;
+}
+
+nav {
+  background: #eeecec;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 40vh;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+  .link {
+    margin: 0.1em 0.1em;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  h3 {
+    padding: 10%;
+    font-size: 1em;
+    margin-top: 35%;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+} */

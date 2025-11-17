@@ -60,7 +60,7 @@ export const data = [
     {
         id: 2,
         name: "Chiclet",
-        searchTerm: "all bracelet",
+        searchTerm: "bracelet",
         show: "all",
         price: 254.99,
         image: [braceletOne],
