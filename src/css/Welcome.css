@@ -1,6 +1,80 @@
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #eeecec;
+    padding: 5% 2%;
+    margin: 10% 0 5%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.image-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
+}
+
+.image-transition {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.image-transition:nth-child(n) {
+    margin-right: 20px;
+}
+
+.first,
+.second,
+.last {
+    padding: 2%;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+/* Планшеты и маленькие экраны */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 5% 0;
+        padding: 4% 2%;
+    }
+
+    .image-wrapper {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .image-transition {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .first,
+    .second,
+    .last,
+    .about {
+        font-size: 12px;
+    }
+}
+
+/* Мобильные телефоны */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 3% 1%;
+    }
+
+    .first,
+    .second,
+    .last,
+    .about {
+        font-size: 10px;
+    }
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
     background-color: #eeecec;
     height: 800px;
     margin-top: 200px;
@@ -54,4 +128,4 @@
     }
 
 
-}
+} */
