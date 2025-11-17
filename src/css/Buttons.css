@@ -2,6 +2,35 @@
     background-color: #eeecec;
     color: black;
     padding: 0.5em 0.5em;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 4px;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.change:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .change {
+        font-size: 12px;
+        padding: 0.4em 0.4em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .change {
+        font-size: 10px;
+        padding: 0.3em 0.3em;
+    }
+}
+
+/* .change {
+    background-color: #eeecec;
+    color: black;
+    padding: 0.5em 0.5em;
     border: solid rgb(191, 191, 191);
     border-radius: 4px;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
@@ -17,4 +46,4 @@
         padding: 0.25em 0.25em;
     }
 
-}
+} */
